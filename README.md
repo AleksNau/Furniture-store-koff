@@ -1,9 +1,29 @@
-# React + Vite
+# ***Марафон — Интернет-магазин мебели Koff***
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- В проекте будут реализованы:
+- Каталог
+- Избранные товары
+- Карточки товаров
+- Корзина
+- Данные будем получать с API для формирования страницы, получение товаров
+- Отправка заказа на сервер
+- Деплой проекта на бесплатный хостинг
+---
+## *Используемые технологии:*
 
-Currently, two official plugins are available:
+- JSX
+- Props
+- Fucntional Component
+- Hooks
+- List, Key
+- React DevTools
+- Redux Toolkit (RTK)
+- React Redux
+- Redux-Thunk
+- Redux DevTools
+- Vite
+- Css-in-react
+- React Router
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# Furniture-store-koff
+
