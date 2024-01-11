@@ -1,7 +1,11 @@
+import Header from "./views/Header/Header.jsx";
+
 const App = () => (
   <>
-    <header></header>
-    <main></main>
+    <Header></Header>
+    <main>
+      <p>Текст</p>
+    </main>
     <footer></footer>
   </>
 );
