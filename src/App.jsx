@@ -1,12 +1,14 @@
 import Header from "./views/Header/Header.jsx";
+import Main from "./views/Main/Main.jsx";
+import Footer from "./views/Footer/Footer.jsx";
 
 const App = () => (
   <>
     <Header></Header>
-    <main>
+    <Main>
       <p>Текст</p>
-    </main>
-    <footer></footer>
+    </Main>
+    <Footer />
   </>
 );
 
