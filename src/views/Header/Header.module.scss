@@ -1,5 +1,6 @@
 .header {
-
+  padding: 16px 0;
+  border-bottom: 1px solid #EEEFF2;
   @media (min-width: 580px) {
 
   }
@@ -32,12 +33,22 @@
 
 .logo {
   grid-area: logo;
+  width: 94px;
 }
 
 .search {
   grid-area: search;
+
+  @media (min-width: 820px) {
+    max-width: 408px;
+    justify-self: center;
+  }
+  @media (min-width: 1120px) {
+    max-width: 514px;
+  }
 }
 
 .navigation {
   grid-area: navigation;
+  justify-self: end;
 }
