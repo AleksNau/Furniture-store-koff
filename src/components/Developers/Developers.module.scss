@@ -1,5 +1,7 @@
 .developers {
-
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   @media (min-width: 580px) {
 
   }
@@ -8,5 +10,25 @@
   }
   @media (min-width: 1120px) {
 
+  }
+}
+
+.item {
+
+}
+
+.link {
+  border-radius: 4px;
+  outline: 1px solid transparent;
+
+  &:hover,
+  &:active {
+    color: #780096;
+  }
+
+  &:focus-visible
+  {
+    color: #780096;
+    outline-color: #780096;
   }
 }

@@ -1,8 +1,8 @@
 import s from "./Contacts.module.scss";
 
 const Contacts = () => (
-  <div className="contacts">
-    <a className={s.phone} href="tel: +7 (939) 839 12 97">
+  <div className={s.contacts}>
+    <a className={`${s.phone} ${s.link}`} href="tel: +7 (939) 839 12 97">
       <svg
         width="16"
         height="16"
@@ -19,7 +19,7 @@ const Contacts = () => (
 
     <ul className={s.list}>
       <li>
-        <a href="#" aria-label="Ссылка на группу в VK">
+        <a className={s.link} href="#" aria-label="Ссылка на группу в VK">
           <svg
             width="16"
             height="16"
@@ -34,7 +34,7 @@ const Contacts = () => (
         </a>
       </li>
       <li>
-        <a href="#" aria-label="Ссылка на ютуб канал">
+        <a className={s.link} href="#" aria-label="Ссылка на ютуб канал">
           <svg
             width="16"
             height="16"
@@ -49,7 +49,7 @@ const Contacts = () => (
         </a>
       </li>
       <li>
-        <a href="#" aria-label="Ссылка на группу в telegram">
+        <a className={s.link} href="#" aria-label="Ссылка на группу в telegram">
           <svg
             width="16"
             height="16"
