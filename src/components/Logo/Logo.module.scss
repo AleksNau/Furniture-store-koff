@@ -1,5 +1,6 @@
 .img {
   width: 100%;
+
   @media (min-width: 580px) {
 
   }
@@ -8,5 +9,15 @@
   }
   @media (min-width: 1120px) {
 
+  }
+}
+
+.link {
+  border-radius: 4px;
+
+  &:focus-visible
+  {
+    color: #780096;
+    outline-color: #780096;
   }
 }
