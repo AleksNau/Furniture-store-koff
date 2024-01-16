@@ -1,4 +1,9 @@
 .card {
+  min-height: 233px;
+  min-width: 140px;
+  max-width: 302px;
+  max-height: 346px;
+  display: grid;
 
   @media (min-width: 580px) {
 
@@ -9,4 +14,22 @@
   @media (min-width: 1120px) {
 
   }
+}
+
+.image {
+  min-width: 112px;
+  min-height: 92px;
+  max-height: 250px;
+  max-width: 302px;
+}
+
+.text {
+  grid-row: 2/3;
+}
+.price {
+  grid-row: 2/3;
+}
+
+.button {
+  grid-row: 3/4;
 }
