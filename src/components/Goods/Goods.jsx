@@ -9,6 +9,9 @@ const Goods = () => (
 
       <ul className={s.list}>
         <CardItem />
+          <CardItem />
+          <CardItem />
+          <CardItem />
       </ul>
     </Container>
   </section>
