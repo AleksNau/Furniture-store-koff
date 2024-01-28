@@ -1,19 +1,19 @@
 .card {
   min-height: 233px;
   min-width: 140px;
-  max-width: 302px;
+
   max-height: 346px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 16px;
+  grid-template-columns: auto 68px;
+  row-gap: 12px;
   position: relative;
 
   @media (min-width: 580px) {
-    max-width: 315px;
-    row-gap: 19px;
+    max-width: 230px;
+    row-gap: 16px;
   }
   @media (min-width: 820px) {
-    max-width: 346px;
+    max-width: 302px;
   }
   @media (min-width: 1120px) {
 
@@ -23,7 +23,10 @@
 .image {
   grid-row: 1/2;
   grid-column: 1/3;
+  width: 100%;
+  object-fit: cover;
   border-radius: 16px;
+  aspect-ratio: 7/6;
 }
 
 .text {
@@ -31,7 +34,7 @@
   font-style: normal;
   font-weight: 400;
   grid-row: 2/3;
-
+  line-height: 1.2;
   @media (min-width: 580px) {
     grid-row: 2/3;
     font-size: 16px;

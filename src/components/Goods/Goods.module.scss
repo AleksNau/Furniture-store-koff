@@ -5,7 +5,7 @@
 .list {
   display: grid;
   padding-top: 24px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(140px,302px) minmax(140px,302px);
   gap:49px 8px;
 
   @media (min-width: 580px) {
