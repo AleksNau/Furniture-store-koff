@@ -3,14 +3,14 @@ import chair from "./images/chair.png";
 
 const CardItem = () => (
   <article className={s.card}>
-    <img className={s.image} src={chair} alt="Изображение товара" />
-    <p className={s.text}>Кресло с подлокотниками</p>
+    <img className={s.img} src={chair} alt="Изображение товара" />
+    <p className={s.title}>Кресло с подлокотниками</p>
     <p className={s.price}>5 000 ₽</p>
-    <button className={s.button} type="button">
+    <button className={s.btn} type="button">
       В корзину
     </button>
     <svg
-      className={s.heart}
+      className={s.favorite}
       xmlns="http://www.w3.org/2000/svg"
       width="16"
       height="16"

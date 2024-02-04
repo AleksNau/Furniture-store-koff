@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-export const fetchCategoreis = createAsyncThunk(
-  "categories/fetchCategoreis",
+export const fetchCategories = createAsyncThunk(
+  "categories/fetchCategories",
   async (_, thunkAPI) => {
     const state = thunkAPI.getState();
     const token = state.auth.accessToken;
@@ -14,8 +14,16 @@ export const fetchCategoreis = createAsyncThunk(
         },
       },
     );
+
     if (!response.ok) {
-      throw new Error("Не удалось получить список!");
+      if (response.status === 401) {
+        return thunkAPI.rejectWithValue({
+          status: response.status,
+          error: "Не удалось получить каталог!",
+        });
+      }
+
+      throw new Error("Не удалось получить каталог!");
     }
 
     return response.json();
@@ -34,20 +42,20 @@ export const categoriesSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(fetchCategoreis.pending, (state) => {
+      .addCase(fetchCategories.pending, (state) => {
         state.loading = true;
         state.error = null;
       })
-      .addCase(fetchCategoreis.fulfilled, (state, action) => {
+      .addCase(fetchCategories.fulfilled, (state, action) => {
         state.data = action.payload;
         state.loading = false;
         state.error = null;
       })
-      .addCase(fetchCategoreis.rejected, (state, action) => {
+      .addCase(fetchCategories.rejected, (state, action) => {
         state.loading = false;
-        state.error = state.error.message;
+        state.error = action.error.message;
       });
   },
-})
+});
 
 export default categoriesSlice.reducer;
